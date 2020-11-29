@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="login_to_yo" type="id" />
+    <item name="username_text_input_layout" type="id" />
+    <item name="etEmail" type="id" />
+    <item name="password_text_input_layout" type="id" />
+    <item name="etPassword" type="id" />
+    <item name="button_SignIn" type="id" />
+    <item name="don_t_have_" type="id" />
+    <item name="Sign_Up" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="etUsername" type="id" />
+    <item name="email_text_input_layout" type="id" />
+    <item name="button_SignUp" type="id" />
+    <item name="Sign_In" type="id" />
+</resources>

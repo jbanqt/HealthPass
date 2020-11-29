@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Health Pass ver 2</string>
+    <!-- strings.xml -->
+    <string name="healthpass">HealthPass</string>
+    <string name="login_to_yo">Login to your Account</string>
+    <string name="create_an_acc">Create an Account</string>
+    <string name="username_required">
+
+<Username></Username>
+</string>
+
+    <string name="don_t_have_">Dont have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+</resources>

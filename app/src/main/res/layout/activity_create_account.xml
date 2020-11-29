@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Create an Account -->
+    <TextView
+        android:id="@+id/login_to_yo"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="250dp"
+        android:gravity="top"
+        android:text="@string/create_an_acc"
+        android:textAppearance="@style/login_to_yo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/LighterBlue"
+        app:boxStrokeColor="@color/blue">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="280dp"
+            android:background="@color/white"
+            android:ems="15"
+            android:hint="Username"
+            android:textColor="@color/LighterBlue"
+            android:textColorHint="@color/blue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_text_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/LighterBlue"
+        app:boxStrokeColor="@color/blue">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+            android:background="@color/white"
+            android:ems="15"
+            android:hint="Email"
+            android:textColor="@color/LighterBlue"
+            android:textColorHint="@color/blue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_input_layout"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/LighterBlue"
+        app:boxStrokeColor="@color/blue"
+        >
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="420dp"
+            android:background="@color/white"
+            android:ems="15"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/LighterBlue"
+            android:textColorHint="@color/blue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_SignUp"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="510dp"
+        android:background="@color/blue"
+        android:elevation="4dp"
+        android:text="Sign up" />
+
+    <!-- Don’t have an account? Sign up -->
+    <TextView
+        android:id="@+id/don_t_have_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="565dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:text="@string/don_t_have_"
+        android:textAppearance="@style/don_t_have_" />
+
+    <TextView
+        android:id="@+id/Sign_In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="565dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:text="@string/sign_in"
+        android:textColor="@color/blue"
+        android:textAppearance="@style/don_t_have_" />
+
+
+</RelativeLayout>

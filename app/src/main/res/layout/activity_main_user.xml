@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityUser"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_main"
+        android:layout_gravity="start"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/menu"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:text="Fill the form to generate QR Code"
+            android:textAppearance="@style/login_to_yo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Fname_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etF_Name"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:background="@color/white"
+                android:hint="First Name"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:textSize="11sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Mname_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etM_Name"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="175dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="Middle Name"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:textSize="11sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Lname_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etL_Name"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="240dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="Last Name"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:textSize="11sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/gender_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etGender"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="305dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="Gender"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:inputType="text"
+                android:textSize="11sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthday_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etBirthday"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="370dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="Birthday"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:inputType="date"
+                android:textSize="11sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="435dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="Contact Number"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:inputType="number"
+                android:textSize="11sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_text_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/LighterBlue"
+            app:boxStrokeColor="@color/blue">
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="500dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:hint="Address"
+                android:textColor="@color/LighterBlue"
+                android:textColorHint="@color/blue"
+                android:inputType="text"
+                android:textSize="11sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+
+            android:text="Generate QR Code"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
